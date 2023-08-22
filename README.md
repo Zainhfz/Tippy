@@ -6,7 +6,7 @@ Build Tippy as your first Android app!
 
 Here's a walkthrough of implemented user stories:
 
-![gifApp](https://github.com/Zainhfz/DateInMinutes/assets/69580731/12363c0d-8052-45b3-ab98-3ba6cc307cb7)
+![tippy](https://github.com/Zainhfz/Tippy/assets/69580731/41ca7ae1-533e-4f00-86ae-be02da3b759b)
 
 
 **Author:** [Zain Ali] 

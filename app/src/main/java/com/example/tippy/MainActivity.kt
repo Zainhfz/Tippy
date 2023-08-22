@@ -8,6 +8,7 @@ import android.text.TextWatcher
 import android.util.Log
 import android.widget.SeekBar
 import android.widget.TextView
+import android.widget.Toolbar
 import androidx.core.content.ContextCompat
 
 private const val TAG = "MainActivity"
@@ -20,7 +21,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var etBase:TextView
     private lateinit var tvTipAmount:TextView
     private lateinit var tvTotalAmount:TextView
-
+  //private lateinit var toolbar:Toolbar
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,6 +33,9 @@ class MainActivity : AppCompatActivity() {
         etBase=findViewById<TextView>(R.id.etBase)
         tvTipAmount=findViewById<TextView>(R.id.tvTipAmount)
          tvTotalAmount=findViewById<TextView>(R.id.tvTotalAmount)
+      val toolbar= findViewById<Toolbar>(R.id.myToolbar)
+       setActionBar(toolbar)
+        toolbar.title="Tip Calculator"
 
         seekBarTip.progress = INITIAL_TIP_PERCENT
         tvTipPercent.text = "$INITIAL_TIP_PERCENT%"

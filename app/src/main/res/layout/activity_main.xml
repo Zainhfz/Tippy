@@ -4,14 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#B9B4C7"
     tools:context=".MainActivity">
+
+    <android.widget.Toolbar
+        android:id="@+id/myToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#102C57"
+        android:title="Tip Calculator"
+        android:titleTextColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo_bhai"
+        android:text="Tip Calculator"
+        android:textColor="@color/Black"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/etBase"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <TextView
         android:id="@+id/tvBaseLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="208dp"
         android:text="Base"
         android:textColor="@android:color/black"
         android:textSize="18sp"
@@ -55,13 +79,15 @@
     <!--  Views on right side  -->
 
     <EditText
+
         android:id="@+id/etBase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="40dp"
         android:ems="8"
         android:inputType="numberDecimal"
         android:textSize="24sp"
+
         app:layout_constraintBaseline_toBaselineOf="@id/tvBaseLabel"
         app:layout_constraintStart_toEndOf="@+id/tvBaseLabel" />
 
